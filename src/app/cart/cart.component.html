@@ -1,0 +1,44 @@
+<h1>Thông tin giỏ hàng</h1>
+<!-- bang gio hang -->
+<div class="row">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#STT</th>
+        <th scope="col">Hình ảnh</th>
+        <th scope="col">Tên sản phẩm</th>
+        <th scope="col">Giá</th>
+        <th scope="col">Số lượng</th>
+        <th scope="col">Thành tiền</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of cartList;let i=index">
+        <th scope="row">{{i}}</th>
+        <td>
+          <img src="{{item.ImageUrl}}" style="height: 100px;width: 100px;">
+      </td>
+      <td class="align-middle"> {{item.Name}}</td>
+      <td class="align-middle">{{item.Price|currency}}
+      </td>
+      <td class="align-middle">{{item.Quantity}}</td>
+      <td class="align-middle">{{item.Price!*item.Quantity!|currency}}
+      </td>
+      <td class="align-middle">
+          <button class="btn btn-danger" (click)="Remove(i)">Remove</button>
+      </td>
+      </tr>
+      <tr>
+        <td colspan="4">Tổng tiền</td>
+<td >{{ ItemCount()}}</td>
+<td>{{ ItemSum() |currency}}</td>
+<td> <button class="btn btn-danger" (click)="DeleteAll()">Delete All</button></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+
+<!---->

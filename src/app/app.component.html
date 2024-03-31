@@ -1,0 +1,219 @@
+
+
+    <div class="container-fluid" style="font-size: xx-large">
+      <nav
+        class="navbar navbar-expand-sm navbar-dark bg-primary"
+        style="
+          margin-left: -14px;
+          margin-right: -14px;
+        border-bottom: 10px;
+
+        "
+      >
+        <!--Brand -->
+
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/" style="color: black">Home</a>
+          </li>
+          <li class="nav-item active" pl-5>
+            <a
+              class="nav-link"
+              routerLink="/caycanh"
+              style="color: black; font-size: 20px; padding-left: 20px; padding-top: 20px;"
+              >Cây Cảnh</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              routerLink="/senda"
+              style="color: black; font-size: 20px; padding-left: 20px; padding-top: 20px;"
+              >Sen Đá</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              routerLink="/thuysinh"
+              style="color: black; font-size: 20px; padding-left: 20px; padding-top: 20px;"
+              >Thuỷ Sinh</a
+            >
+          </li>
+
+          <!-- <li>
+            <ul class="nav nav-tabs">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu" *ngFor="let item of productHome">
+                  <a class="dropdown-item" [routerLink]="['/product', item.menu]">{{item.menu}}</a>
+
+
+
+                </div>
+              </li>
+
+            </ul>
+          </li> -->
+          <ng-container
+            *ngIf="isAuthenticated() == 1 || isAuthenticated() == 2"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/list"  style="color: black; font-size: 20px; padding-left: 20px; padding-top: 20px;">Product list</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/userlist"  style="color: black; font-size: 20px; padding-left: 20px; padding-top: 20px;">User list</a>
+            </li>
+          </ng-container>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <ng-container *ngIf="isAuthenticated()">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" routerLink="/cart">My Cart</a>
+            </li>
+          </ng-container>
+          <ng-container *ngIf="!isAuthenticated()">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/login" href="#">Login</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/register" href="#">Register</a>
+            </li>
+          </ng-container>
+          <ng-container *ngIf="isAuthenticated()">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                routerLink="/Logout"
+                (click)="logout()"
+                href="#"
+                >Logout</a
+              >
+            </li>
+          </ng-container>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-fluid" >
+      <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselId" data-slide-to="1"></li>
+          <li data-target="#carouselId" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" style="padding-left: 100px">
+          <div class="carousel-item active">
+            <img
+              src="../assets/images/cach-trang-tri-sen-da-dep.png"
+              alt="First slide"
+              height="300px"
+              width="450px"
+            />
+            <img
+              src="../assets/images/sendado2.png"
+              alt="First slide"
+              height="300px"
+              width="450px"
+            />
+            <img
+              src="../assets/images/sendatim1.png"
+              alt="First slide"
+              height="300px"
+              width="450px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/luoiho.png"
+              alt="Second slide"
+              width="450px"
+              height="300px"
+            />
+            <img
+              src="../assets/images/kimcuongtrang3.png"
+              alt="First slide"
+              width="450px"
+              height="300px"
+            />
+            <img
+              src="../assets/images/rongbuitrang2.png"
+              alt="First slide"
+              width="450px"
+              height="300px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/ss1-1024x667.png"
+              alt="Third slide"
+              width="450px"
+              height="300px"
+            />
+            <img
+              src="../assets/images/xuongca.png"
+              alt="First slide"
+              width="450px"
+              height="300px"
+            />
+            <img
+              src="../assets/images/reu.png"
+              alt="First slide"
+              width="450px"
+              height="300px"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselId"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselId"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="container" >
+      <router-outlet></router-outlet>
+    </div>
+    <div>
+
+    </div>
+    <footer class="footer" id="contact">
+      <div class="box-container" style="margin-left: 5%">
+        <div class="mainBox">
+          <div class="content">
+            <a href="#"><img src="images/logo.png" alt="" /></a>
+            <h1 class="logoName">TreeShop</h1>
+          </div>
+
+          <p>
+            TreeShop là website bán cây cảnh trực tuyến uy tín, chuyên cung cấp đa dạng các loại cây cảnh phong thủy, cây nội thất, cây ngoại thất và các phụ kiện cây cảnh. Với sứ mệnh mang thiên nhiên vào cuộc sống, TreeShop mong muốn mang đến cho khách hàng những sản phẩm chất lượng cao cùng dịch vụ chuyên nghiệp, góp phần tạo nên không gian xanh mát và hài hòa cho ngôi nhà và văn phòng của bạn.
+          </p>
+        </div>
+
+        <div class="box" >
+        </div>
+        <div class="box" >
+          <h3>Contact Info</h3>
+          <a href="#"> <i class="fas fa-phone"></i>+84 812015925</a>
+          <a href="#"> <i class="fas fa-envelope"></i>namdesigner@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>Mr.Nam </span> |all rights reserved !
+      </div>
+    </footer>
+

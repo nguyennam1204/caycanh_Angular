@@ -1,0 +1,247 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productName": "Cây Tùng Xương Cá",
+      "menu": "caycanh",
+      "releaseDate": "March 19, 2016",
+      "description": "Là một cây được liệt kê vào hàng cây xa xỉ và có hình dáng bắt mắt, Tùng Xương Cá nhiều người yêu thích ngay từ ánh nhìn đầu tiên và ngày càng phổ biến trên thị trường cây cảnh.",
+      "price": 19.95,
+      "starRating": 3.2,
+      "inStock": 5,
+      "imageUrl": "./assets/images/xuongca.png"
+    },
+    {
+      "id": "2",
+      "productName": "Cây Phát Tài",
+      "menu": "caycanh",
+      "releaseDate": "March 18, 2016",
+      "description": "Cây Phát Tài được tìm thấy ở Zambia, Tanzania và Tây Phi. Loại cây này có lá màu xanh sẫm, tán lá xòe rộng và có đường gân vàng nổi bật, thường được trồng trong nhà giúp thanh lọc không khí hiệu quả…",
+      "price": 32.99,
+      "starRating": 4.2,
+      "inStock": 5,
+      "imageUrl": "./assets/images/phattai.png"
+    },
+    {
+      "id": "3",
+      "productName": "Cây Vạn Lộc",
+      "menu": "caycanh",
+      "releaseDate": "May 21, 2016",
+      "description": "Cây Vạn Lộc (tên khoa học: Aglaonema Rotundum Pink) có tốc độ sinh trưởng nhanh, dễ chăm sóc, phù hợp trang trí nội thất, phòng làm việc. Cây Vạn Lộc phong thủy tượng trưng cho sự may mắn, năng lượng tràn đầy và mang sự thịnh vượng, no đủ cho gia chủ.",
+      "price": 8.9,
+      "starRating": 4.8,
+      "inStock": 5,
+      "imageUrl": "./assets/images/vanloc.png"
+    },
+    {
+      "id": "4",
+      "productName": "Cây Thẻ Bài Hồng",
+      "menu": "caycanh",
+      "releaseDate": "May 15, 2016",
+      "description": "Cây Thẻ Bài Hồng (tên khoa học: Wallisia cyanea) còn gọi là cây Lệnh Bài. Trong phong thủy, cây sẽ mang lại tài lộc, may mắn cho những người mệnh Hỏa…",
+      "price": 11.55,
+      "starRating": 3.7,
+      "inStock": 5,
+      "imageUrl": "./assets/images/thebaihong.png"
+    },
+    {
+      "id": "5",
+      "productName": "Cây Đuôi Công Tím",
+      "menu": "caycanh",
+      "releaseDate": "October 15, 2015",
+      "description": "Cây Đuôi Công Tím (tên khoa học: Calathea medallion/Calathea makoyana) với vẻ ngoài nổ bật, thu hút đã trở thành loại cây để bàn, cây văn phòng được ưa chuộng nhất hiện nay. Cây biểu trưng cho sự thịnh vượng và may mắn cho gia chủ.",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/congtim.png"
+    },
+    {
+      "id": "6",
+      "productName": "Rotala wallichi - Cây Luân Thảo Đỏ(Lá Cạn)",
+      "menu": "caycanh",
+      "releaseDate": "October 15, 2023",
+      "description": "Rotala wallichi là một loại cây thủy sinh đẹp, dễ trồng và có nhiều công dụng. Cây thích hợp cho mọi loại hồ thủy sinh, từ hồ thủy sinh nhỏ đến hồ thủy sinh lớn.",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/thaodo.png"
+    },
+    {
+      "id": "7",
+      "productName": "Cây đại hồng huyết",
+      "menu": "thuysinh",
+      "releaseDate": "October 15, 2023",
+      "description": "Chưa có mô tả",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/honghuyet.png"
+    },
+    {
+      "id": "8",
+      "productName": "Rêu Minifiss trải nền “loại 1” xanh tươi.",
+      "menu": "thuysinh",
+      "releaseDate": "October 15, 2023",
+      "description": "Rêu minifiss là loại thực vật được sử dụng rất nhiều trong bể thuỷ sinh. Nhờ khả năng thích nghi cao, dễ phát triển nên được rất nhiều anh em chơi thuỷ sinh lựa chọn. Minifiss thường được sử dụng để trải nền, tạo cảnh thảm cỏ xanh mướt. Có thể gắn rêu lên các vách đá tạo điểm nhấn.",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/reu.png"
+    },
+    {
+      "id": "9",
+      "productName": "Cây ráy “nana tàu” lá nhỏ bán theo chậu.",
+      "menu": "thuysinh",
+      "releaseDate": "October 15, 2023",
+      "description": "Ráy nana tàu lá nhỏ có thể dùng keo dán rêu để cố định vào lũa, giá thể, đá để tạo cảnh thuỷ sinh. Hoặc cắm trực tiếp rễ xuống lớp phân nền trong bể thuỷ sinh.",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/nana.png"
+    },
+    {
+      "id": "10",
+      "productName": "Rotala wallichi - Cây Luân Thảo Đỏ(Lá Cạn)",
+      "menu": "thuysinh",
+      "releaseDate": "October 15, 2023",
+      "description": "Rotala wallichi là một loại cây thủy sinh đẹp, dễ trồng và có nhiều công dụng. Cây thích hợp cho mọi loại hồ thủy sinh, từ hồ thủy sinh nhỏ đến hồ thủy sinh lớn.",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/thaodo.png"
+    },
+    {
+      "id": "13",
+      "productName": "Cỏ dùi trống",
+      "menu": "senda",
+      "releaseDate": "October 15, 2023",
+      "description": "Chưa có mô tả cho sản phẩm này",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/co.png"
+    },
+    {
+      "id": "14",
+      "productName": "nam",
+      "menu": "caycanh",
+      "releaseDate": "2024-03-13",
+      "price": 14,
+      "description": "cdkbch",
+      "starRating": 5,
+      "imageUrl": "./assets/images/back.png"
+    },
+    {
+      "id": "15",
+      "productName": "nam",
+      "menu": "caycanh",
+      "releaseDate": "2024-03-13",
+      "price": 14,
+      "description": "cdkbch",
+      "starRating": 5,
+      "imageUrl": "./assets/images/back.png"
+    },
+    {
+      "id": "16",
+      "productName": "Cỏ dùi trống",
+      "menu": "senda",
+      "releaseDate": "October 15, 2023",
+      "description": "Chưa có mô tả cho sản phẩm này",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/co.png"
+    },
+    {
+      "id": "17",
+      "productName": "Cỏ dùi trống",
+      "menu": "senda",
+      "releaseDate": "October 15, 2023",
+      "description": "Chưa có mô tả cho sản phẩm này",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/co.png"
+    },
+    {
+      "id": "18",
+      "productName": "Cỏ dùi trống",
+      "menu": "senda",
+      "releaseDate": "October 15, 2023",
+      "description": "Chưa có mô tả cho sản phẩm này",
+      "price": 35.95,
+      "starRating": 4.6,
+      "inStock": 5,
+      "imageUrl": "./assets/images/co.png"
+    },
+    {
+      "id": "88a0",
+      "productName": "cas",
+      "menu": "senda",
+      "releaseDate": "2024-03-13",
+      "price": 13,
+      "description": "casc",
+      "starRating": 5,
+      "imageUrl": "./assets/images/back.png"
+    },
+    {
+      "id": "cf73",
+      "productName": "cas",
+      "menu": "senda",
+      "releaseDate": "2024-03-13",
+      "price": 13,
+      "description": "casc",
+      "starRating": 5,
+      "imageUrl": "./assets/images/back.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "itc.edu@gmail.com",
+      "role": "3"
+    },
+    {
+      "id": "2",
+      "email": "user@gmail.com",
+      "password": "12345678",
+      "role": 1
+    },
+    {
+      "id": "3",
+      "email": "nguyenhoainam61021@gmail.com",
+      "password": "12345678",
+      "role": 2
+    },
+    {
+      "id": "4",
+      "email": "nguyenhoainam1021@gmail.com",
+      "password": "12345678",
+      "role": 3
+    },
+    {
+      "id": "5",
+      "email": "434@gmail.com",
+      "password": "12345678",
+      "role": 3
+    },
+    {
+      "id": "6",
+      "email": "root",
+      "password": "123456789",
+      "role": 3
+    },
+    {
+      "id": "c4e5",
+      "email": "lychau2387@gmail.com",
+      "password": "12345678",
+      "role": 1
+    },
+    {
+      "id": "6e5b",
+      "email": "",
+      "password": "",
+      "role": 1
+    }
+  ]
+}

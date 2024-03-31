@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+
+<div class="row" style="font-size: large;">
+  <div class="col-4 text-center">
+      <img class="p-3" src="{{productDetail?.imageUrl}}" style="width: 350px;height: 250px;">
+  </div>
+  <div class="col-5">
+      <h1 style="font-size: 50px;">{{productDetail?.productName}}</h1>
+      <div class="crop" [style.width.px]="(productDetail?.starRating!*90) /5">
+
+          <div style="width: 1000px;">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+          </div>
+      </div>
+
+      <div class="text-justify">
+          <h3>Description: </h3> {{productDetail?.description}}
+      </div>
+      <h3>Price : {{ productDetail?.price|currency}} </h3>
+      <h4>Quantity in stock : {{productDetail?.inStock}} </h4>
+      <button class="btn btn-primary" [disabled]="InStock<1" (click)="Add()" style="width: 100px; font-size: large;">Buy</button>
+
+
+
+
+  </div>
+  <div class="col-3">
+      <div style="border: 1pxsolidblack;margin-top: 10px;padding: 10px;">
+          <a routerLink="/cart" style="float: left;">
+              <i class="fas fa-shopping-cart" style="font-size: 50px;">
+              </i></a>
+          <div class="text-center">{{ ItemCount()}}<br>Total :{{ ItemSum() |currency}}<br>
+              <button class="btn btn-primary" style="margin-top: 10px;"  data-toggle="modal"
+              data-target="#modelId">View Cart</button>
+          </div>
+      </div>
+  </div>
+</div>
+ <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+          <table style="width: 100%;" class="text-center table">
+              <tr>
+                  <th>Picture</th>
+                  <th>Product name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total amount</th>
+                  <th></th>
+              </tr>
+              <tr *ngFor="let item of cartList;let i=index">
+                  <td>
+                      <img src="{{item.ImageUrl}}" style="height: 100px;width: 100px;">
+                  </td>
+                  <td class="align-middle" style="text-transform: uppercase;"> {{item.Name}}</td>
+                  <td class="align-middle">{{item.Price|currency}}
+                  </td>
+                  <td class="align-middle">{{item.Quantity}}</td>
+                  <td class="align-middle">{{item.Price!*item.Quantity!|currency}}
+                  </td>
+                  <td class="align-middle">
+                      <button class="btn btn-danger" (click)="Remove(i)">Remove</button>
+                  </td>
+              </tr>
+              <tr>
+                  <th colspan="2">
+                  </th>
+                  <th>Sum price:</th>
+                  <th>{{ItemCount()}}</th>
+                  <th>{{ ItemSum() |currency}}</th>
+                  <th>
+                      <button class="btn btn-danger" (click)="DeleteAll()">Delete All</button>
+                  </th>
+              </tr>
+          </table>
+      </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

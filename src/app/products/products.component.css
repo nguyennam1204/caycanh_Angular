@@ -1,0 +1,14 @@
+.product-card {
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1); /* Increase image size by 10% on hover */
+}
+.card-rounded {
+  border-radius: 10px; /* Bo tròn các góc card với bán kính 10px */
+}
+
+.product-image {
+  border-radius: 5px; /* Bo tròn các góc hình với bán kính 5px */
+}

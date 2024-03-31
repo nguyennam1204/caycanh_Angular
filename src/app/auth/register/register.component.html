@@ -1,0 +1,35 @@
+
+<div class="wrapper " style="margin-left: 30%;margin-top:7%; margin-bottom:3%;font-size: larger;">
+  <div class="title">
+     Register Form
+  </div>
+  <form (ngSubmit)="submit()" #myForm="ngForm">
+     <div class="field">
+      <!-- <label for="">Email</label> -->
+      <input type="text" [(ngModel)]="form.email" name="email" id="email" class="form-control"
+          placeholder="Email Address" aria-describedby="helpId">
+
+     </div>
+     <div class="field">
+      <!-- <label for="">Password</label> -->
+      <input type="password" [(ngModel)]="form.password" minlength="8" name="password" id="password"
+          autocomplete="on" class="form-control" placeholder="Password" aria-describedby="helpId">
+
+     </div>
+     <div class="field">
+      <!-- <label for="">Confirm Password</label> -->
+      <input type="password" [(ngModel)]="form.confirm_password" minlength="8" name="confirm_password"
+          autocomplete="on" id="confirm_password" class="form-control" placeholder="Confirm Password"
+          aria-describedby="helpId">
+
+     </div>
+     <div class="field">
+      <button type="submit" [disabled]="myForm.form.invalid" class="btn btn-primary">
+        <ng-container>Submit</ng-container>
+    </button>
+     </div>
+     <a class="nav-link text-center" href="#" routerLink="/login">đăng nhập ngay<span
+     class="sr-only">(current)</span></a>
+  </form>
+
+</div>
